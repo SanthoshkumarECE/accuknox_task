@@ -1,1 +1,5 @@
-In the third task, we looked at whether Django signals are part of the same database transaction. A transaction is like a temporary container where multiple changes can happen together safely. We created a row inside a transaction block and then checked the row count in the signal. The signal was able to see the new row even before the transaction was officially complete. This proves that the signal is part of the same database transaction and has access to the changes made inside it.
+In the third task, we looked at whether Django signals are part of the same database transaction. 
+A transaction is like a temporary container where multiple changes can happen together safely. 
+We created a row inside a transaction block and then checked the row count in the signal. 
+The signal was able to see the new row even before the transaction was officially complete. 
+This proves that the signal is part of the same database transaction and has access to the changes made inside it.
